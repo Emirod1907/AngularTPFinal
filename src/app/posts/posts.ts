@@ -1,11 +1,11 @@
 import { Component, inject } from '@angular/core';
 import { Post } from '../services/post.service'
 import { PostsService } from '../services/post.service'
-
+import { Navbar } from '../navbar/navbar';
 
 @Component({
   selector: 'app-posts',
-  imports: [],
+  imports: [Navbar],
   templateUrl: './posts.html',
   styleUrl: './posts.css'
 })

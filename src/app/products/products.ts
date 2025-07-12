@@ -1,9 +1,10 @@
 import { Component, inject } from '@angular/core';
 import { ProductInterface, ProductService } from '../services/product.service';
+import { Navbar } from '../navbar/navbar';
 
 @Component({
   selector: 'app-products',
-  imports: [],
+  imports: [Navbar],
   templateUrl: './products.html',
   styleUrl: './products.css'
 })

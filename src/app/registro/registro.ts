@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms'
+import { Navbar } from '../navbar/navbar';
 
 @Component({
   selector: 'app-registro',
-  imports: [FormsModule],
+  imports: [FormsModule, Navbar],
   templateUrl: './registro.html',
   styleUrl: './registro.css'
 })

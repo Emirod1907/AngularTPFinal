@@ -1,11 +1,12 @@
 import { Component, inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ProductInterface, ProductService } from '../services/product.service';
+import { Navbar } from '../navbar/navbar';
 
 
 @Component({
   selector: 'app-detalle',
-  imports: [],
+  imports: [Navbar],
   templateUrl: './detalle.html',
   styleUrl: './detalle.css'
 })

@@ -2,6 +2,7 @@ import { Component, inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ProductInterface, ProductService } from '../services/product.service';
 
+
 @Component({
   selector: 'app-detalle',
   imports: [],

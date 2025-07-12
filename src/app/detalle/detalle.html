@@ -1,4 +1,20 @@
 <p>detalle works!</p>
 @if(product_selected){
     <h1>{{product_selected.title}}</h1>
+    <img src="{{product_selected.img}}" alt="{{product_selected.title}}"/>
+        <h3>{{product_selected.title}}</h3>
+            <span class="product-list-container__product-list__product-card__price">{{product_selected.price}}</span>
+            <div>
+                <span class="product-list-container__product-list__product-card__final-price">{{product_selected.final_price}}</span>
+                <span class="">{{product_selected.discount}}%OFF</span>
+            </div>
+            @if(product_selected.is_same_price_with_installments){
+                <span> En 6 cuotas de ${{product_selected.installments}} sin interes</span>
+            }
+            @else{
+                <span> En 6 cuotas de ${{product_selected.installments}} con interes</span>
+            }
+            @if(product_selected.free_shipping){
+                <span>     Llega gratis el {{product_selected.free_shipping_day}}</span>
+            }
 }

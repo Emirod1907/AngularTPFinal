@@ -1,0 +1,57 @@
+<div>
+    <form (submit)="registrarUsuario()">
+        <div>
+            <label for="nombre">Nombre</label>
+            <input
+                id="nombre"
+                type="string"
+                required
+                name="nombre"
+                [(ngModel)]="form_state.nombre">
+        </div>
+        <div>
+            <label for="apellido">Apellido</label>
+            <input
+                id="apellido"
+                type="string"
+                required
+                name="apellido"
+                [(ngModel)]="form_state.apellido">
+        </div>
+        <div>
+            <label for="telefono">Telefono</label>
+            <input
+                id="telefono"
+                type="number"
+                required
+                name="telefono"
+                [(ngModel)]="form_state.telefono">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input
+                id="email"
+                type="email"
+                required
+                name="email"
+                [(ngModel)]="form_state.email">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input
+                id="password"
+                type="password"
+                required
+                minlength="6"
+                maxlength="10"
+                name="password"
+                [(ngModel)]="form_state.password"
+                #password="ngModel"
+                >
+                @if( password.dirty && password.invalid){
+                    <span>El password debe tener una longitud entre 6 y 10 caracteres</span>
+                }
+        </div>
+        <button type="submit">Registrar Usuario</button>
+    </form>
+</div>

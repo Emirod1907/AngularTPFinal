@@ -1,0 +1,40 @@
+<h1>Mensajeria de Prueba</h1>
+<div>
+    @if(messages.length === 0){
+        <span>Aun no hay mensajes</span>
+    }
+    @for(message of messages; track message.id){
+        <div>
+            <h1>{{message.author}}</h1>
+            <p>{{message.text}}</p>
+            <button>Eliminar Mensaje</button>
+            <hr/>
+        </div>
+    }
+    <form (submit)="enviarMensaje()">
+        <div>
+            <label for="author">Ingresa a nombre de quien chatearas:</label>
+            <input 
+                id="author" 
+                type="text" 
+                required 
+                minlenght="3" 
+                maxlenght="12"
+                name="author"
+                [(ngModel)]="form_state.author"
+            >
+        </div>
+        <div>
+            <label for="text">Escribe un mensaje</label>
+            <textarea 
+                id="text"
+                required
+                maxlenght="120"
+                name="text"
+                [(ngModel)]="form_state.text"
+            ></textarea>
+        </div>
+        <button type="submit">Enviar mensaje</button>
+    </form>
+</div>
+

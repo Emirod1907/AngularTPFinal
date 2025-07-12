@@ -1,0 +1,26 @@
+<div>
+    <form (submit)="iniciarSesion()">
+        <div>
+            <label for="email">Email</label>
+            <input
+                id="email"
+                type="email"
+                required
+                name="email"
+                [(ngModel)]="form_state.email"
+            >
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input
+                id="password"
+                type="password"
+                required
+                name="password"
+                [(ngModel)]="form_state.password">
+        </div>
+        <div>
+            <button type="submit">Iniciar Sesion</button>
+        </div>
+    </form>
+</div>

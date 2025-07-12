@@ -1,0 +1,74 @@
+[
+    {
+        "id":1,
+        "title":"Curcuma",
+        "price":5400,
+        "discount":15,
+        "final_price":4590,
+        "img":"https://acdn-us.mitiendanube.com/stores/001/434/490/products/dico40_1-980e1cb489ce39e4db16218026102532-640-01-52320ccfedf581e27f16270666180953-1024-1024.jpg",
+        "installments": 3,
+        "is_same_price_with_installments":true,
+        "free_shipping": true,
+        "free_shipping_day":"lunes"
+    },
+    {
+        "id":2,
+        "title":"Harina de Almendras",
+        "price":6200,
+        "discount":10,
+        "final_price":5580,
+        "img":"https://acdn-us.mitiendanube.com/stores/001/172/573/products/harinas-de-almendra1-8b86d5d554a354354e15903635202021-480-0.jpg",
+        "installments": 3,
+        "is_same_price_with_installments":true,
+        "free_shipping": true,
+        "free_shipping_day":"lunes"
+    },
+    {
+        "id":3,
+        "title":"Mantequilla de mani",
+        "price":4500,
+        "discount":5,
+        "final_price":4275,
+        "img":"https://acdn-us.mitiendanube.com/stores/001/434/490/products/cookies_and_cream_le-fit_mantequilla_de_mani-11-30d5526e2462ccd5a416070501512290-1024-1024.png",
+        "installments": 3,
+        "is_same_price_with_installments":true,
+        "free_shipping": true,
+        "free_shipping_day":"lunes"
+    },
+    {
+        "id":4,
+        "title":"Manteca Ghee",
+        "price":12700,
+        "discount":25,
+        "final_price":9525,
+        "img":"https://elbanquito.com.ar/wp-content/uploads/2020/07/golden-monkey-ghee-manteca-de-mani-clarificadai-el-banquito-market.jpg",
+        "installments": 3,
+        "is_same_price_with_installments":true,
+        "free_shipping": true,
+        "free_shipping_day":"lunes"
+    },
+    {
+        "id":5,
+        "title":"Manjar de Leche",
+        "price":6800,
+        "discount":12,
+        "final_price":5984,
+        "img":"https://acdn-us.mitiendanube.com/stores/001/943/096/products/man400-7e08baff7c97a13f7a17452708853756-640-0.jpg",
+        "installments": 3,
+        "is_same_price_with_installments":true,
+        "free_shipping": true,
+        "free_shipping_day":"lunes"
+    },
+    {
+        "id":6,
+        "title":"Yogur Griego",
+        "price":14600,
+        "discount":20,
+        "final_price":11680,
+        "img":"https://acdn-us.mitiendanube.com/stores/950/583/products/750-e67df29c02642f233a17129276218331-640-0.jpg",
+        "installments": 3,
+        "is_same_price_with_installments":true,
+        "free_shipping": true,
+        "free_shipping_day":"lunes"
+    }
+]

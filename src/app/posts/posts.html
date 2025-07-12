@@ -1,0 +1,18 @@
+<h1>Comentarios de la comunidad</h1>>
+@if(loading){
+    <span>Cargando</span>
+}
+@else if(error){
+    <span style="color: red"> Error: {{error}}</span>
+}
+@else {
+    <div class="post-container">
+        @for(post of posts; track post.id){
+            <div class="post-item">
+                <h3 class="post-title">{{post.title}}:</h3>
+                <p class="post-body">{{post.body}}</p>
+                <hr/>
+            </div>
+        }
+    </div>
+}
